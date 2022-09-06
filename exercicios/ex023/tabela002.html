@@ -21,6 +21,12 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -33,6 +39,14 @@
         .num {
             text-align: right;
         }
+
+        th.w1 {
+            width: 10px;
+        }
+
+        th.w2 {
+            width: 150px;
+        }
     </style>
 </head>
 <body>
@@ -41,10 +55,11 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPITION = LEGENDA DA TABELA
             THEAD
                 TR = TABLE ROW / linha
-                TD = TABLE DATA 
-                TH = TABLE HEADER / cabeçalho
+                TD = TABLE DATA / dado
+                TH = TABLE HEADER /titulo ou cabeçalho
                 
             TBODY
                 TR, TD, TH
@@ -52,12 +67,13 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População 2010</th>
-                <th>População 2021</th>
+                <th scope="col" class="w1">Posição</th>
+                <th scope="col" style="width: 180px;" >Estado</th>
+                <th scope="col" class="w2">População 2010</th>
+                <th scope="col" class="w2">População 2021</th>
             </tr>
         </thead>
         <tbody>
@@ -121,11 +137,112 @@
                 <td class="center">6.248.436</td>
                 <td class="num">7.338.473</td>
             </tr>
+            <tr>
+                <td class="center">11</td><!--alterar a partir daqui-->
+                <td>Goiás</td>
+                <td class="center">6.003.788</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Maranhão</td>
+                <td class="center">6.574.789</td>
+                <td class="num">7.153.262</td>
+            </tr>
+            <tr>
+                <td class="center">13</td>
+                <td>Amazonas</td>
+                <td class="center">3.483.985</td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <tr>
+                <td class="center">14</td>
+                <td>Espírito Santo</td>
+                <td class="center">3.514.952</td>
+                <td class="num">4.108.508</td>
+            </tr>
+            <tr>
+                <td class="center">15</td>
+                <td>Paraíba</td>
+                <td class="center">3.766.528</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <tr>
+                <td class="center">16</td>
+                <td>Mato Grosso</td>
+                <td class="center">3.035.122</td>
+                <td class="num">3.567.234</td>
+            </tr>
+            <tr>
+                <td class="center">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="center">3.168.027</td>
+                <td class="num">3.560.903</td>
+            </tr>
+            <tr>
+                <td class="center">18</td>
+                <td>Alagoas</td>
+                <td class="center">3.120.494</td>
+                <td class="num">3.365.351</td>
+            </tr>
+            <tr>
+                <td class="center">19</td>
+                <td>Piauí</td>
+                <td class="center">3.118.360</td>
+                <td class="num">3.289.290</td>
+            </tr>
+            <tr>
+                <td class="center">20</td>
+                <td>Distrito Federal</td>
+                <td class="center">2.570.160</td>
+                <td class="num">3.094.325</td>
+            </tr>
+            <tr>
+                <td class="center">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="center">2.449.024</td>
+                <td class="num">2.839.188</td>
+            </tr>
+            <tr>
+                <td class="center">22</td>
+                <td>Sergipe</td>
+                <td class="center">2.068.017</td>
+                <td class="num">2.338.474</td>
+            </tr>
+            <tr>
+                <td class="center">23</td>
+                <td>Rondônia</td>
+                <td class="center">1.562.409</td>
+                <td class="num">1.815.278</td>
+            </tr>
+            <tr>
+                <td class="center">24</td>
+                <td>Tocantins</td>
+                <td class="center">1.383.445</td>
+                <td class="num">1.607.363</td>
+            </tr>
+            <tr>
+                <td class="center">25</td>
+                <td>Acre</td>
+                <td class="center">733.559</td>
+                <td class="num">906.876</td>
+            </tr>
+            <tr>
+                <td class="center">26</td>
+                <td>Amapá</td>
+                <td class="center">669.526</td>
+                <td class="num">877.613</td>
+            </tr>
+            <tr>
+                <td class="center">27</td>
+                <td>Roraima</td>
+                <td class="center">450.479</td>
+                <td class="num">652.713</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
-                <th>Total de Habitantes</th>
+                <th colspan="2" scope="row">Total de Habitantes</th>
                 <td>0000</td>
                 <td>0000</td>
             </tr>
