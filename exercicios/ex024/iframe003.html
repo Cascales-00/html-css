@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab explicabo facilis numquam, iure illo quidem? Porro numquam ullam consequatur accusamus eligendi consectetur. Vero sequi obcaecati maxime, veniam quos placeat. Eveniet?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="testeframe">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="testeframe">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="testeframe">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quis voluptatibus. Architecto, excepturi, rerum nulla impedit accusantium quae, ut deserunt unde eveniet aliquid itaque ullam porro ipsa voluptates saepe nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel asperiores animi tempora neque! Rem, eligendi perferendis veniam, vero vitae nemo, natus iure mollitia provident ipsum quisquam. Similique, necessitatibus enim?</p>
+
+    <!--
+        NAVEGANDO NO IFRAME
+        iframe recebe um NAME ='#'
+        e o TARGET da ancoragem recebe o resultado de NAME
+    -->
+    <iframe src="" id="tela" name="testeframe">
+        <p>infelizmente seu navegador não é compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione labore, tempore inventore accusamus reiciendis praesentium quos non eaque pariatur exercitationem ad. Animi rerum delectus commodi distinctio et placeat quas.</p>
+</body>
+</html>
