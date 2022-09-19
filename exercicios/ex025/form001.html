@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--
+        Capitulo 24 Aula 02
+        formularios
+        sempre deve relacionar o input ao seu label
+        todo campo input deve possuir um label para fazer uma ligação aos campos
+        (vantagem para uso em celulares - cria uma area maior para selecionar o campo)
+
+        name = mais ultil para hmtl e php
+        id = mais ultil para javascript e label
+        method= get (para dados não sensiveis)
+    -->
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
