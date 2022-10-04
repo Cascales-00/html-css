@@ -40,11 +40,79 @@ main {
     margin: auto;       
 }
 
+div.mod {
+    margin: auto;
+    display: block;
+    background-color: rgba(124, 123, 123, 0.377);
+    width: 700px;
+    height: 290px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+div.mod > button {
+    width: 100px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    margin: 10px 0px 0px 10px;
+    border-style: none;
+    background-color: rgba(231, 232, 247, 0.918);
+    font-weight: bold;    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+}
+.list {
+    columns: 3;
+    margin: 10px;
+    text-align: center;
+}
+
+.list > li {
+    list-style-type: none;
+}
+
+.list > li > button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(231, 232, 247, 0.918);
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+    border-style: none;
+    margin: 10px 0px 0px 10px;
+}
+
+div.mod > button > a {
+    margin: auto;
+}
+
+div.mod > button:hover {
+    background-color: rgba(43, 42, 42, 0.651);
+    border: 1px solid rgba(255, 255, 255, 0.747);
+    transition: 0.5s; 
+}
+
+div.mod > button > a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Sriracha', cursive;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
 div#mod1 {
     margin: auto;
     background-color: rgba(124, 123, 123, 0.377);
     width: 700px;
-    height: 260px;
+    height: 290px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -72,55 +140,6 @@ div#mod1 > button:hover {
 div#mod1 > button > a:hover {
     color: white;
     font-weight: bold;
-}
-div.mod {
-    margin: auto;
-    display: block;
-    background-color: rgba(124, 123, 123, 0.377);
-    width: 700px;
-    height: 150px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
-}
-
-div.mod > button {
-    width: 100px;
-    padding: 5px;
-    margin: auto;
-    border-radius: 10px;
-    margin: 10px 0px 0px 10px;
-    border-style: none;
-    background-color: rgba(231, 232, 247, 0.918);
-    font-weight: bold;    
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
-}
-
-div.mod > button > a {
-    margin: auto;
-}
-
-div.mod > button:hover {
-    background-color: rgba(43, 42, 42, 0.651);
-    border: 1px solid rgba(255, 255, 255, 0.747);
-    transition: 0.5s;
-    
-
-}
-
-div.mod > button > a:hover {
-    color: white;
-    font-weight: bold;
-}
-
-h2 {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Sriracha', cursive;
-    font-size: 2em;
-    text-shadow: 2px 2px 2px black;
-    margin-bottom: 0px;
 }
 
 button > a {
